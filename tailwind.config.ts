@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -24,6 +25,30 @@ export default {
 				ring: 'hsl(var(--ring))',
 				background: 'hsl(var(--background))',
 				foreground: 'hsl(var(--foreground))',
+				trustblue: {
+					50: '#e6f1ff',
+					100: '#cce3ff',
+					200: '#99c7ff',
+					300: '#66abff',
+					400: '#338fff',
+					500: '#0073ff',
+					600: '#005ccc',
+					700: '#004599',
+					800: '#002e66',
+					900: '#001733',
+				},
+				trustteal: {
+					50: '#ebfffc',
+					100: '#d6fff9',
+					200: '#adffF3',
+					300: '#85feec',
+					400: '#5cfee6',
+					500: '#33fedf',
+					600: '#29cbb2',
+					700: '#1f9886',
+					800: '#146659',
+					900: '#0a332d',
+				},
 				primary: {
 					DEFAULT: 'hsl(var(--primary))',
 					foreground: 'hsl(var(--primary-foreground))'
@@ -84,11 +109,16 @@ export default {
 					to: {
 						height: '0'
 					}
+				},
+				'pulse-slow': {
+					'0%, 100%': { opacity: '1' },
+					'50%': { opacity: '0.5' }
 				}
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out'
+				'accordion-up': 'accordion-up 0.2s ease-out',
+				'pulse-slow': 'pulse-slow 3s cubic-bezier(0.4, 0, 0.6, 1) infinite'
 			}
 		}
 	},
